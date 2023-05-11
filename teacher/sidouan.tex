@@ -7,7 +7,8 @@
 \usepackage{luatexja} % ltjclasses, ltjsclasses を使うときはこの行不要
 \usepackage{amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,mypkg,titlesec}
 \usepackage[all]{xy}
-\titleformat*{\section}{\Large\bfseries}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleformat*{\section}{\Large}
 \setlength{\parindent}{0pt}
 \pagestyle{empty}
 %\everymath{\displaystyle}
@@ -20,6 +21,16 @@
 \hfill 印\\
 日時：\\
 場所：\\
-対象：
+対象：\\
+\subsection{単元名}
 
+\subsection{単元の目標}
+
+\subsection{単元の評価規準}
+
+\subsection{単元について}
+  \subsubsection*{(1)教材観}
+  \subsubsection*{(2)生徒観}
+  \subsubsection*{(3)指導観}
+\subsection{単元の指導計画}
 \end{document}
