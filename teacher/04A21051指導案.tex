@@ -1,0 +1,82 @@
+\RequirePackage{luatex85}
+\documentclass{ltjsarticle}
+\usepackage{luatexja-fontspec}
+%\setmainfont[Ligatures=TeX]{MS Mincho}
+\setmainjfont[YokoFeatures={JFM=prop},]{UD Digi Kyokasho NK-R}
+\usepackage[top=10truemm,bottom=15truemm,left=30truemm,right=30truemm]{geometry}
+\usepackage{luatexja} % ltjclasses, ltjsclasses を使うときはこの行不要
+\usepackage{amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,mypkg,titlesec}
+\usepackage[all]{xy}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\newcommand{\tab}[1]{\begin{tabular}{l}#1 \end{tabular}}
+\titleformat*{\section}{\Large}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+%\everymath{\displaystyle}
+\begin{document}
+\begin{center}
+  \Large{学習指導案}
+\end{center}
+\hfill 指導教諭：\\
+\hfill 授業者：大阪大学理学部 山本雄大\\
+\hfill 印\\
+日時：2023年06月07日\\
+場所：大阪大学共B208\\
+対象：中学校3年生\\
+\subsection{単元名}\vspace*{-3mm}
+  \(x^2\)に比例する関数
+  \vspace*{-3mm}
+\subsection{単元の目標}\vspace*{-3mm}
+  \(x^2\)に比例する関数のグラフをイメージし，その特徴を理解できるようになる．また，そのグラフを用いて問題を解けるようになる．
+  \vspace*{-3mm}
+\subsection{単元の評価規準}\vspace*{-3mm}
+\subsubsection*{(1)知識・技能}
+  日常の事象のなかには，\(y=ax^2\)として捉えることができるものがあることを知る．
+  また，1次関数や2次関数以外にも関係で関数となっているものが存在することを知る．
+  \vspace*{-3mm}
+\subsubsection*{(2)思考判断表現}
+  \(y=ax^2\)となっていると見なせるものに対して，
+  表，式，グラフを用いて表現し考察できる．
+  \vspace*{-3mm}
+\subsubsection*{(3)主体的に学習に取り組む態度}
+  日常の事象などからヒントを得て，抽象化・一般化するなどの数学的な捉え方をすることができる．
+  \vspace*{-3mm}
+\subsection{単元について}\vspace*{-3mm}
+  \subsubsection*{(1)教材観}
+    生徒たちは，1年次で比例や反比例について学び，そこで2つの数値の集まりを
+    表，式，グラフを用いて表せられること，2年次には，連立方程式と
+    1次関数とそのグラフとの関係を学んできている．そこで，今まで学んできた
+    関数と比較して，1次関数は変化率が定義域から選択してきた2点に依らず一定であったのに対し，
+    2次関数はそうでないことなどの相違点，\(x\)を決めると\(y\)が一つに定まるという関数に
+    なっているという点などの共通点を学ぶ．
+  \subsubsection*{(2)生徒観}
+    数学の得意としている生徒がいる一方で，
+    連立方程式などの数値計算はできるものの，関数の概念の理解が追いついておらず
+    グラフとの関係などが分かっていない生徒も存在する．また，授業への参加に意欲的な生徒とそうでない生徒に二分されている傾向がある． 
+  \subsubsection*{(3)指導観}
+    関数の概念が分かっていない生徒もいるため，関数の概念とグラフとの関係を意識した伝え方をし，理解が伴っているか
+    確認する．また，具体的な2次関数を提示しそのグラフを自ら描いてもらい，2次関数のイメージをもち，
+    問題を解くときには，グラフなどの視覚的な情報から解き方などの推論ができるように伝える．
+\subsection{単元の指導計画}\vspace*{-3mm}
+
+\subsection{本時の指導計画}\vspace*{-3mm}
+  \subsubsection*{(1)目標}
+    放物線のおおまかなイメージを持ち，\(y=ax^2\)の係数\(a\)の変化に伴うグラフの変化を理解し，
+    与えられた式から概形を描けるようになる．
+  \subsubsection*{(2)使用教材，準備物など}
+    教科書，プリント．
+  \subsubsection*{(3)展開計画}\vspace*{3mm}
+  \begin{center}
+    \scalebox{1}[1]{
+      \begin{tabular}{|c|c|c|c|c|} \hline
+        時間 & 指導内容 & 生徒の学習活動 & 指導上の留意点 & 評価\\ \hline
+        5分& １次関数の復習 & \tab{1次関数と反比例のグラ\\フを書いてみて， 関数とグ\\ラフの関係を思い出す．\\反比例のグラフからな\\るべく多くの点をとる\\と取っていない点の座\\標もその前後の点から\\推定して与えられた関\\数のグラフに近いもの\\が描けることを再確認\\する．}&  \tab{時間がかかりすぎない\\ようにする．} & \tab{\(x\)に対して\(y\)が一つ定\\まるという関数の概念\\が理解できているか．\\1次関数のグラフが正\\しく描けているか．} \\ \hline
+        10分 & 導入1 & \tab{関数\(y=x^2\)について，\\配布した表とを用いて\\座標平面上に\(x\)が整数\\の点についてプロット\\して，グラフを書いてみて，\\大局的な概形を考え，\\点と点の間の振る舞い\\を予想してみて，それ\\を班ごとに黒板で発表\\する．}& \tab{\(y\)軸に関して対称であ\\ることに気づいたとき，\\式からどうしてそれが\\言えるのか考えてもら\\う．} & \tab{} \\ \hline
+        10分 & 導入2 & \tab{\(0.1\)間隔で表を作成し，\\それを座標平面上にプ\\ロットし，繋げてみる．} & \tab{4人班で，協力分担し\\て表とグラフを作成さ\\せ，お互いに正しいか\\確認させるとともに机\\間指導によっても確認\\する．} & \tab{2乗の計算ができて，\\ \(y\)軸に対称か，\(|x|\)に関し\\て増加しているかなど\\のポイントをおさえた\\グラフが描けているか．}\\ \hline
+        15分 & 展開 & \tab{\(y=-x^2,\ y=\frac{1}{2}x^2\)\\,\( y= 2x^2\)など色々な係数\\の２次関数を班ごとに\\割り振り，導入と同様\\に表からグラフを作成して\\もらう．}& \tab{気付いたことがあれば，\\発表してもらう．} &  \tab{導入の\(y=x^2\)との\\変化に気づけるか．} \\ \hline
+        5分 & まとめ & \tab{本時で学んだ内容の係\\数\(a\)におけるグラフの\\概形の変化や違いにつ\\いて確認する．}& \tab{係数を時間に関して連\\続に変化させたアニメ\\ーションを見せたい．}& \\\hline
+      \end{tabular}}
+  \end{center}
+
+  \subsubsection*{(4)板書計画}
+\end{document}

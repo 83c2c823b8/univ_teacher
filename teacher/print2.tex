@@ -1,0 +1,47 @@
+\RequirePackage{luatex85}
+\documentclass[a4papaer]{ltjsarticle}
+\usepackage{luatexja-fontspec}
+%\setmainfont[Ligatures=TeX]{MS Mincho}
+\setmainjfont[YokoFeatures={JFM=prop},]{UD Digi Kyokasho NK-R}
+\usepackage[top=10truemm,bottom=10truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{luatexja} % ltjclasses, ltjsclasses を使うときはこの行不要
+\usepackage{amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,mypkg,titlesec,tikz}
+\usepackage[all]{xy}
+\titleformat*{\section}{\Large\bfseries}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+%\everymath{\displaystyle}
+\begin{document}
+%{\textbf{\LARGE{ }\ \Large{No.}}}\hspace{\fill} {\texttt{\Large{04A21051}}}\\
+
+\section*{色々な\(a\)の\(y=ax^2\)のグラフ}
+    \begin{tabular}{c|c c c c c c c c c c c c } \hline
+      \(x\) &\(\cdots\)& $-4$ &$ -3 $& $-2 $&$ -1$ & $0 $& $1 $& $2 $&$ 3 $&$ 4 $ &\(\cdots\) &\\ \hline
+      \(x^2\) &           &$16$ & $ 9 $& $ 4$ & $ 1 $&$0 $&$ 1 $&$ 4 $& $9 $&$ 16 $ &       &\\ \hline
+      \(-x^2\)\\\hline
+      \(\frac{1}{2}x^2\)\\\hline
+      \(2x^2\)
+    \end{tabular}\\
+
+    \begin{center}
+      \begin{tikzpicture}
+        \draw[dotted,thin,step=0.5] (-5,-10) grid (5,10);
+        \draw [->,thick] (-5.2,0) -- (5.2,0) node [right]{\(x\)};
+        \draw [->,thick] (0,-10) -- (0,10) node [above]{\(y\)};
+        \node [below left] (0,0){O};
+        \draw(2.5,0)node[below]{\(5\)};
+        \draw(-2.5,0)node[below]{\(-5\)};
+        \draw(5,0)node[below]{\(10\)};
+        \draw(-5,0)node[below]{\(-10\)};
+        \draw(0,2.5)node[left]{\(5\)};
+        \draw(0,5)node[left]{\(10\)};
+        \draw(0,7.5)node[left]{\(15\)};
+        \draw(0,10)node[left]{\(20\)};
+        \draw(0,-2.5)node[left]{\(-5\)};
+        \draw(0,-5)node[left]{\(-10\)};
+        \draw(0,-7.5)node[left]{\(-15\)};
+        \draw(0,-10)node[left]{\(-20\)};
+        \draw[domain=-3.16:3.16] plot(\x, \x*\x) node[above] {$y=x^2$};
+        \end{tikzpicture}
+    \end{center}
+\end{document}
