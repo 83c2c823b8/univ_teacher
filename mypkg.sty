@@ -1,0 +1,40 @@
+\renewcommand{\ker}{\mathrm{Ker}}%カーネル
+\newcommand{\const}{\mathrm{const.}}%定数
+\newcommand{\mb}[1]{\mathbf{#1}}%太字
+\newcommand{\mr}[1]{\mathrm{#1}}%ローマン体
+\newcommand{\st}{\ \mathrm{s.t.}\ }%さっちざっと
+\newcommand{\ie}{\ \mathrm{i.e.}\ }%すなわち
+\newcommand{\thm}[2]{\begin{itembox}[l]{Thm. #1}#2\end{itembox}}%定理四角
+\newcommand{\DEF}[2]{\begin{itembox}[l]{Def. #1}#2\end{itembox}}%定義四角
+\newcommand{\defi}{\overset{\text{def}}{\Longleftrightarrow}}%定義するときの⇔
+\newcommand{\toi}[2]{\begin{itembox}[l]{問#1.}#2\end{itembox}}%問の四角
+\newcommand{\inv}{^{-1}}%　インバース
+\newcommand{\lto}{\longrightarrow}%長い→
+\newcommand{\douchi}{\Longleftrightarrow}
+%\newcommand{\lxra}[1]{\overset{#1}{\longrightarrow}}
+\newcommand{\lem}[2]{\begin{itembox}[l]{Lem .#1}#2\end{itembox}}%補題
+\renewcommand{\qedsymbol}{$\blacksquare$}%証明終わりを黒四角
+\newcounter{mythmcounter}[section] % カウンタの宣言
+\renewcommand{\themythmcounter}{\arabic{section}.\arabic{mythmcounter}}% セクション と　自然数
+\setcounter{mythmcounter}{0} % カウンタの初期化
+\newcommand{\mythm}[1]{\begin{itembox}[l]{\refstepcounter{mythmcounter}Thm {\themythmcounter}.} #1\end{itembox}}%  Thm 
+\newcommand{\mylem}[1]{\begin{itembox}[l]{\refstepcounter{mythmcounter}Lem {\themythmcounter}.} #1\end{itembox}}%  Lem
+\newcommand{\myprop}[1]{\begin{itembox}[l]{\refstepcounter{mythmcounter}Prop {\themythmcounter}.} #1\end{itembox}}%  Prop
+\newcommand{\mydef}[1]{\begin{itembox}[l]{\refstepcounter{mythmcounter}Def {\themythmcounter}.} #1\end{itembox}}%問の四角
+\newcommand{\mycor}[1]{\begin{itembox}[l]{\refstepcounter{mythmcounter}Cor {\themythmcounter}.} #1\end{itembox}}%問の四角
+\newcommand{\maru}{\scalebox{0.75}{\circ}}% 写像の合成
+\newcommand{\N}{\mathbb N}%自然数
+\newcommand{\Q}{\mathbb Q}%有理数
+\newcommand{\Z}{\mathbb Z}%有理整数
+\newcommand{\R}{\mathbb R}%実数
+\newcommand{\C}{\mathbb C}%複素数
+\newcommand{\D}{\mathbb D}%単位円盤
+\newcommand{\F}{\mathbb F}%有限体
+\newcommand{\id}{\mathrm{id}}%恒等写像
+\DeclareMathOperator{\gal}{\mathrm{Gal}\nolimits}%Galois拡大
+\DeclareMathOperator{\Hom}{\mathrm{Hom}\nolimits}%homomorphism 
+\DeclareMathOperator{\itHom}{\mathcal{H}\mathit{om}}%italic homomorphism 
+\DeclareMathOperator{\Cone}{\mathrm{Cone}}%italic homomorphism 
+\newcommand{\mat}[1]{\left( \begin{matrix} #1 \end{matrix} \right)}%行列簡略化
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Coker}{Coker}
