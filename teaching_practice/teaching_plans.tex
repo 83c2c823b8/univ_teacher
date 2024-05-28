@@ -3,7 +3,7 @@
 \usepackage{luatexja-fontspec}
 \usepackage[top=20truemm,bottom=20truemm,left=25truemm,right=25truemm]{geometry}
 \usepackage{luatexja} 
-\usepackage{multicol,amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,titlesec,mathrsfs,longtable,tabularx,mypkg}
+\usepackage{multicol,multirow,amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,titlesec,mathrsfs,longtable,tabularx,mypkg}
 \usepackage[all]{xy}
 \titleformat*{\section}{\Large\bfseries}
 \setlength{\parindent}{0pt}
@@ -20,37 +20,116 @@
 	\item[１]
 		単元（題材・主題）連立方程式
 	\item[２] 単元（題材）について
-	\item[３]
-		指導について
-	\item[４]
-		本時の目標
+
+		\hspace{1em}二元一次方程式には解$(x,y)$が多くあり，２つの本質的に異なる方程式が存在すると
+		その方程式を同時に満たす解が一意に定まり，それを求めるということが連立方程式である
+		ことを学ぶ．
+		そこで連立方程式の解き方として加減法と代入法の２種類があるが
+		双方とも未知数を１つ消去して一元一次方程式に帰着していることを認識し，
+		その上で係数などをみて代入法と加減法の上手な使い分けができるようになることを
+		狙いとしている．\hfill
+		
+
+	\item[３]指導について
+
+		\hspace{1em}第１学年の数と式において一元一次方程式では未知数$x$などを用いて
+		数量を文字を使ってあらわすことや項，係数，代入などの用語も学ん
+		でいる．一元一次方程式の解き方を念頭において，それに帰着するために
+		代入法，加減法を用いて解いていく．
+		一元一次方程式の２年生の一次関数の単元に入ったときに連立方程式を解くことは
+		二直線の交点を求めていたということで２つ式があると１つの解が定まることに
+		納得してほしい．連立方程式の利用の節では日常の種々の問題での未知数を$(x,y)$
+		などとおいて方程式を解くということに帰着することで問題を容易に捉えられるように
+		することを体感させたい．\\
+		\hspace{1em}本学級は
+		
+
+
+	\item[４]	本時の目標
 		\begin{enumerate}
 			\item[(1)]
+				文章から未知数２つを設定して連立方程式に落とし込むことができる．
+				
+			\item[(2)]
+				
+				
+				
 		\end{enumerate}
 	\item[５]
 		本時の指導過程 \begin{table}[htbp]
 			\centering
-			\begin{tabular}{|p{8em}|>{\raggedright}p{17em}|>{\raggedright\arraybackslash}p{17em}|}
+	\begin{tabular}{|p{8em}|>{\raggedright}p{17em}|>{\raggedright\arraybackslash}p{17em}|}
 			 \hline
 		学習内容 & 生徒の学習活動 & 教師の支援（・）・評価（※）・協働（◇） \\
      & &   \\
    \hline \hline
-    １ 既習内容の確認 & ・復習問題を解く．\\（加減法,代入法） & ・早く終わった生徒に答えを小黒板に書かせる．  \\
-		２ 課題提示&・課題に取り組む． \[\left\{ \begin{array}{l} 5x - 3(2y+3x) = 0 \\ x+2y =-5 \end{array}\right.\] &  \tabularnewline
-    ３ &  &  \tabularnewline
-    ４ &  &  \tabularnewline 
-    ５&  & \tabularnewline
-    ６& &  \tabularnewline
-    ７& &  \tabularnewline
+		１ 本時の目標の確認 & & \tabularnewline
+		\multicolumn{3}{|c|}{\fbox{文章から$x,y$などと文字をおいて連立方程式を設定できるようになろう．} }\tabularnewline
+
+				２ 既習内容の確認 & ・復習問題を解く．\\ 連立方程式の解き方の確認\\ １年生の方程式の利用 &   \tabularnewline
+													&	
+			$\begin{cases}x + y = 6 \\ 2x + y = 10\end{cases} \ 
+		\begin{cases}3x - 2y = 1 \\ 6x - 5y = -2\end{cases} $\\ 
+													& \tabularnewline
+\multicolumn{3}{|c|}{
+		\toi{1}{2000円でケーキ4個と150円のジュースを1本買うとおつりが450円でした．ケーキ一個はいくらですか．}
+		}\tabularnewline
+
+		& ・方程式をたてて解く手順を確認する．\\ 
+			(1) 不明な量を文字で置く．\\
+			(2) 式をたてる．\\
+			(3) 一次方程式を解く．\\ &\tabularnewline
+
+		３課題提示&・連立方程式の利用の課題に取り組む．\\
+		一次方程式でも簡単に解ける問題		&  \tabularnewline
+
+						& & \tabularnewline
+		\multicolumn{3}{|c|}{
+				\toi{2}{
+					１本100円のボールペンと１個150円の消しゴムを合わせて10個買うと1200円でした．
+					それぞれいくつ買いましたか．
+				}
+		}\tabularnewline
+		&  ・一次方程式を用いる解法 \\ 
+		ボールペン$x$本買ったとおいて
+		$  100x + 150(10 - x) = 1200 $ \\  & 
+		・解き終えた生徒に他の解法を考えさせる．\tabularnewline
+		&  ・連立方程式を用いる解法 \\ 
+		ボールペンと消しゴムの買った数をそれぞれ$x,y$とおいて \\
+		$\begin{cases}
+		100x + 150y = 1200\\
+		x + y = 10
+	\end{cases}$\\[1em] 
+			$(x,y) = (6,4)$& \tabularnewline
    \hline
 		\end{tabular}
 	\end{table}
+	
+		
+\newpage
+\begin{table}[htbp]
+	\begin{tabular}{|p{8em}|>{\raggedright}p{17em}|>{\raggedright\arraybackslash}p{17em}|}
+		\hline 
+		& & \tabularnewline
+
+		\multicolumn{3}{|c|}{
+		\toi{3}{
+
+		}
+	}\tabularnewline
+
+		４ &  &  \tabularnewline 
+		
+    ５&  & \tabularnewline
+		
+		６& &  \tabularnewline
+		
+		７& &  \tabularnewline
+		
+		\hline
+	\end{tabular}
+\end{table}
 	\item[６]
 		評価の観点
-
-
-
 \end{enumerate}
-
-\end{document}
-
+	\end{document}}
