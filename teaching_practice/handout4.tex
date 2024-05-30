@@ -1,0 +1,32 @@
+\RequirePackage{luatex85}
+\documentclass[17pt,b4paper, landscape]{ltjsarticle}% leqnoは数式番号左
+\usepackage{luatexja-fontspec}
+\usepackage[top=10truemm,bottom=10truemm,left=10truemm,right=10truemm]{geometry}
+\usepackage{luatexja} 
+\usepackage{multicol,amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,titlesec,mathrsfs,mypkg}
+\usepackage[all]{xy}
+\titleformat*{\section}{\Large\bfseries}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+%\everymath{\displaystyle}
+\setlength{\columnseprule}{0.4pt}
+\begin{document}
+{\textbf{\Large{連立方程式の利用}}}\hspace{\fill}{\scalebox{1.5}{（　）組（　　　　　　　　）}}\\
+\begin{multicols*}{3}
+\toi{1}{
+	2000円でケーキ4個と150円のジュースを１本買うとお釣りが450円でした．ケーキ一個はいくらですか．
+} \vfill\null\columnbreak
+
+\toi{2}{
+	１本100円のボールペンと１個150円の消しゴムを合わせて10個買うと1200円でした．それぞれいくつ買いましたか．
+} \vfill\null\columnbreak
+
+\toi{3}{
+あるレジャー施設の入園料は，おとな２人と小学生１人で4500円\\
+大人１人と小学生２人で3600円でした．
+おとな１人と小学生１人の入園料をそれぞれ求めなさい．
+}
+\vfill\null\columnbreak
+
+\end{multicols*}
+\end{document}
