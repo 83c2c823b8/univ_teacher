@@ -1,0 +1,52 @@
+\RequirePackage{luatex85}
+\documentclass[17pt,b4paper, landscape]{ltjsarticle}% leqnoは数式番号左
+\usepackage{luatexja-fontspec}
+\usepackage[top=10truemm,bottom=5truemm,left=15truemm,right=15truemm]{geometry}
+\usepackage{luatexja} 
+\usepackage{array,multicol,amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,titlesec,mathrsfs,mypkg}
+\usepackage[all]{xy}
+\titleformat*{\section}{\Large\bfseries}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\everymath{\displaystyle}
+\setlength{\columnseprule}{0.4pt}
+\begin{document}
+{\textbf{\Large{いろいろな連立方程式}}}\hspace{\fill}{\scalebox{1.5}{（　）組（　　　　　　　　）}}\\
+\begin{center}
+\begin{table}[htbp]
+	\begin{tabular}{|p{70truemm}|>{\centering}p{70truemm}|>{\centering}p{70truemm}|>{\centering}p{70truemm}|}
+	\hline 
+		(1)\begin{tabular}{l}\\ $\begin{cases}{}
+			7(x-1) - 3y = -6\\
+			2(x + y) = 3x + 11
+		\end{cases}$ \\ \hfill\end{tabular} &
+		(2)\begin{tabular}{l}\\ $\begin{cases}{}
+			\frac{1}{6}x + y = 2\\[10pt]
+			\frac{1}{3}x - \frac{2}{5}y = \frac{1}{5}
+		\end{cases}$ \\ \hfill\end{tabular} &
+		(3)\begin{tabular}{l}\\ $\begin{cases}{}
+				
+		\end{cases}$ \\ \hfill\end{tabular}&
+		(4)\begin{tabular}{l}\\ $\begin{cases*}{}
+			7(x-1) - 3y = -6\\
+			2(x + y) = 3x + 11
+		\end{cases*}$ \\ \hfill\end{tabular}\tabularnewline
+	\hline
+		\begin{tabular}{l}かっこを外して，\\ $\begin{cases}{}
+			\bigtriangleup x + \square y = \heartsuit\\
+			\bigstar x + \clubsuit y = \spadesuit
+		\end{cases}$ \\の形にしよう \hfill\end{tabular} &
+		& & \tabularnewline 
+		\hline
+		\begin{tabular}{l}\\[250pt]  \end{tabular}&&& \tabularnewline
+	\hline
+
+	\end{tabular}
+\end{table}
+\end{center}
+\newpage
+
+\begin{multicols*}{3}
+
+\end{multicols*}
+\end{document}

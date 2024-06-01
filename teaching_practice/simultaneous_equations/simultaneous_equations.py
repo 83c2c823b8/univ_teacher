@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 # coding: utf-8
 import sympy
-from spb import *
 from fractions import Fraction
 
 def se(a,b,c,d,e,f):
