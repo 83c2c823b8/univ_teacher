@@ -1,0 +1,45 @@
+\RequirePackage{luatex85}
+\documentclass[b4paper,16.5pt,paparesize, landscape]{ltjsarticle}% leqnoは数式番号左
+\usepackage{luatexja-fontspec}
+\usepackage[top=10truemm,bottom=10truemm,left=10truemm,right=10truemm]{geometry}
+\usepackage{luatexja} 
+\usepackage{multicol,amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,titlesec,mathrsfs,mypkg}
+\usepackage[all]{xy}
+\titleformat*{\section}{\Large\bfseries}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\everymath{\displaystyle}
+\setlength{\columnseprule}{0.4pt}
+\begin{document}
+{\textbf{\Large{加減法}}}\hspace{\fill}{\scalebox{1.5}{（　）組（　　　　　　　　）}}\\
+\begin{multicols*}{3}
+$(1)\begin{cases}
+			x + 2y  = 3\\
+			x + 3y = 5\\
+\end{cases}$ 	\\[82mm]
+(2)$\begin{cases}
+			9x + 4y = -15\\
+			7x - 4y = -26\\
+\end{cases}$\vfill\null\columnbreak
+
+$(3)\begin{cases}
+			3x  - 5y = 13\\
+			x + 7y = -13\\
+\end{cases}$ 	\\[82mm]
+$(4)\begin{cases}
+				-7x - 8y = 3\\
+				14x + 5y = 27\\
+\end{cases}$
+ \vfill\null\columnbreak
+ \begin{enumerate}
+	 \item[Step1]
+		どちらかの式を整数倍して，消去したい文字の係数の絶対値を揃える．\\
+	 \item[Step2]
+	 \item[Step3]
+	 \item[Step4]
+	 \item[Step5]
+ \end{enumerate}
+
+
+\end{multicols*}
+\end{document}
