@@ -3,7 +3,7 @@
 \usepackage{luatexja-fontspec}
 \usepackage[top=10truemm,bottom=10truemm,left=10truemm,right=10truemm]{geometry}
 \usepackage{luatexja} 
-\usepackage{multicol,amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,titlesec,mathrsfs,mypkg}
+\usepackage{multicol,amsmath,amssymb,mathtools,ascmac,amsthm,amscd,physics,comment,dcolumn,titlesec,mathrsfs,mypkg,cases,cleveref}
 \usepackage[all]{xy}
 \titleformat*{\section}{\Large\bfseries}
 \setlength{\parindent}{0pt}
@@ -13,36 +13,75 @@
 \begin{document}
 {\textbf{\Large{加減法}}}\hspace{\fill}{\scalebox{1.5}{（　）組（　　　　　　　　）}}\\
 \begin{multicols*}{3}
+	\begin{screen}
+		\vspace{5mm}
+	\begin{enumerate}
+	 \item[Step1]
+			片方の式を整数倍して\underbar{\hspace{20mm}}の絶対値をそろえる．\\
+	 \item[Step2]
+			足すか引くかして文字を\underbar{\hspace{20mm}}する．\\
+	 \item[Step3]
+		 解く!\\
+	 \item[Step4]
+		 \underbar{\hspace{20mm}}して解く．\\
+	 \item[Step5]
+		 確かめる．\\
+\end{enumerate}
+	\end{screen}
+	\\[10pt]
+	例)
+	\begin{numcases}
+		{}
+		x - 3y = -5 \label{first}\\
+		2x -4y = -4 \label{second}
+	\end{numcases}
+\begin{enumerate}
+	\item[Step1]\hfill\\
+		(\ref{first})$\times$ 2\\
+		\begin{equation}
+			2x - 6y = -10
+		\end{equation}
+	\item[Step2]\hfill\\
+		(3) $ - $ (2)
+			\begin{equation*}
+				-2y = -6
+			\end{equation*}
+	\item[Step3]\hfill\\
+		\begin{equation*}
+			y = 3
+		\end{equation*}
+	\item[Step4]\hfill\\
+		(1)に$y=3$を代入して，
+		\begin{gather*}
+			x - 9 = -5\\
+			x = 4
+		\end{gather*}
+	\item[Step5]\hfill\\	
+		$(x,y) = (4,3)$を(1),(2)の左辺に代入するとそれぞれ
+		\begin{eqnarray*}
+			4 - 3\times 3 = -5 \\
+			2\times 4 - 4\times 3 = -4
+		\end{eqnarray*}
+		右辺と一致するからOK
+		
+\end{enumerate}
+\vfill\null\columnbreak
+
 $(1)\begin{cases}
 			x + 2y  = 3\\
-			x + 3y = 5\\
-\end{cases}$ 	\\[82mm]
+			3x + 4y = 7\\
+			%(1,1)
+\end{cases}$ 	\\[90mm]
 (2)$\begin{cases}
-			3x  - 5y = 13\\
-			x + 7y = -13\\
-\end{cases}$\vfill\null\columnbreak
-
- \begin{enumerate}
-	 \item[Step1]
-			片方の式を整数倍して\underbar{\hspace{20mm}}の絶対値をそろえる．
-			\vspace{35mm}
-	 \item[Step2]
-			足すか引くかして文字を\underbar{\hspace{20mm}}する．
-			\vspace{35mm}
-	 \item[Step3]
-		 解く!
-			\vspace{35mm}
-	 \item[Step4]
-		 \underbar{\hspace{20mm}}して解く．
-			\vspace{35mm}
-	 \item[Step5]
-		 確かめる．
- \end{enumerate}
+			2x  - 5y = 7\\
+			6x + 4y = 2\\
+			%(1,-1)
+\end{cases}$
 
 
  \vfill\null\columnbreak
  \begin{itembox}[l]{(3)}
-	 \vspace{20mm}
+	 \vspace{25mm}
  \end{itembox}
 
 \end{multicols*}
